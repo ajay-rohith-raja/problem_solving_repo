@@ -11,10 +11,11 @@ jobs:
 
     steps:
       - name: Sync Submissions
-        uses: joshcai/leetcode-sync@v1.5
+        uses: joshcai/leetcode-sync@v1.7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
           leetcode-session: ${{ secrets.LEETCODE_SESSION }}
-          destination-folder: 'solutions' # Saves code inside a folder named "solutions"
-          verbose: true
+          destination-folder: 'solutions' 
+          git-username: 'ajay-rohith-raja'
+          git-email: 'ajayarr2005@gmail.com'
